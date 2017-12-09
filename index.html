@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="windows-1251"/>
+		<title>Home</title>
+		<link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+		<script>
+		function check()
+		{
+		var input = document.getElementById('input').value;
+		
+		if ( input <= 0  || input > 100)
+		{
+			alert ("Age is not correct");
+		}
+		if ( input < 18 && input > 0)
+		{
+			alert("Sorry, but the site for adults");
+		}
+		if ( input => 18 && input < 100 )
+		{
+			document.location.href='assets/home1.html'
+		}
+		}
+		
+		</script
+	</head>
+	
+
+<body>
+
+	<div id="head">
+		
+		<input type="text" id="input">
+		<input type="button" value="How old are you?" onclick="check()">
+	</div>
+	
+</body>
+
+
+</html>

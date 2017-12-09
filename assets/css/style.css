@@ -1,0 +1,37 @@
+body{
+	background-image: url(../img/1.jpg);
+	background-size: cover; 
+}
+
+#head{
+	
+	border: 1px solid white;
+	width: 300px;
+	height: 30px;
+	color:white;
+	position: absolute;
+	top:50%;
+	left: 40%;
+	text-align: center;
+	box-shadow: 1px 1px 3px white;
+	font-size: 16px;
+	padding: 5px;
+	margin-bottom: 5px;
+
+}
+a{
+	color: #C9C9C9;
+	font-family: monospace;
+	text-decoration: none;
+
+}
+a:hover{
+	color: white;
+}
+
+#head:hover{
+	transition: 2s all;
+	box-shadow: 3px 3px 7px white;
+	width: 300px;
+}
+

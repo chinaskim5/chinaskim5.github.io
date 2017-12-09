@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>chack</title>
+	<link rel="stylesheet" type="text/css" href="css/style4.css">
+	<script>
+	delay=800
+	num=0
+	 imgslide = new Array() 
+	  imgslide[0]=new Image() 
+	  imgslide[1]=new Image() 
+	  imgslide[2]=new Image() 
+	  imgslide[0].src= "img/27.jpg"
+	  imgslide[1].src= "img/28.jpg"
+	  imgslide[2].src= "img/29.jpg"
+	function anim()
+	{
+	  	timeout_id = setTimeout("start()", delay)
+	}
+	function start()
+	{
+	  	var d = document
+	  	d.images[0].src=imgslide[num].src 
+		num++ 
+		if(num==3) 
+	    num=0;
+		timeout_id = setTimeout("start()", delay)
+	}
+
+</script>
+</head>
+<body>
+<div id="menu">
+ 
+	<div id="main">
+	<a href="home1.html">Главная </a>
+	<a href="news.html">Новости </a>
+	<a href="bestbook.html">Лучшие&nbspкниги&nbspЧака</a>
+	
+	</div>
+	
+</div> <!--menu-->
+<div id="content">
+	<div id="text">Паланик выпустит книжку-раскраску</div>
+	<div id="text1">Писатель Чак Паланик готовит к публикации книжку-раскраску для взрослых. Об этом пишет The Guardian. Сборник рассказов с рисунками для раскрашивания поступит в продажу в октябре 2016 года. Иллюстрации к изданию нарисовали художники Ли Бермехо, Дункан Фегредо и Джоэль Джонс.<br>
+	<img src="img/27.jpg" id="news" onMouseOver="anim()" onMouseOut="clearTimeout(timeout_id);document.getElementById('news').src = 'img/27.jpg';">
+	<div id="text">Спустя 19 лет Паланик опубликует продолжение "Бойцовского клуба"</div>
+	<div id="text1">Американский писатель Чак Паланик планирует выпустить продолжение бестселлера "Бойцовский клуб" в следующем году, пишет "ВВС Україна".
+
+Сиквел знаменитого романа выйдет в виде комиксов.
+
+Действие<br> новой книги будет проходить спустя десять лет. В нем главный герой первой части женат и имеет девятилетнего сына. В комиксах он будет бороться с кризисом среднего возраста.
+
+В сиквеле появится и злое альтер-эго главного героя – Тайлер Дерден.
+"Бойцовский клуб" был издан в 1996 году и переведен на 25 языков. По мотивам романа в 1999 Девид Финчер снял одноименный фильм.
+<img src="img/fight2.jpg">
+</div>
+	</div>
+</div>
+
+	
+</body>
+</html>
