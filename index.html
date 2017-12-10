@@ -8,23 +8,25 @@
 		<script>
 		function check()
 		{
+	
 		var input = document.getElementById('input').value;
 		
 		if ( input <= 0  || input > 100)
 		{
 			alert ("Age is not correct");
 		}
-		if ( input < 18 && input > 0)
+		else{
+		if (input < 18 && input < 100)
 		{
 			alert("Sorry, but the site for adults");
 		}
-		if ( input => 18 && input < 100 )
+		else
 		{
 			document.location.href='assets/home1.html'
 		}
 		}
-		
-		</script
+		}
+		</script>
 	</head>
 	
 
